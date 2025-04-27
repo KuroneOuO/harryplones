@@ -1,11 +1,11 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: 'Cinzel', serif; /* Fuente estilo medieval */
+  line-height: 1.6;
+  font-weight: 500;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: dark;
+  color: #f0e6d2; /* Color pergamino viejo */
+  background-color: #044e14; /* Fondo oscuro mágico */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,12 +14,13 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  font-weight: 600;
+  color: #d4af37; /* Dorado encantado */
+  text-decoration: none;
 }
 a:hover {
-  color: #535bf2;
+  color: #73a4b3; /* Dorado más brillante */
+  text-shadow: 0 0 8px #ffdb58;
 }
 
 body {
@@ -28,41 +29,51 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(#011d08, #3b2f2f);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3.5em;
+  line-height: 1.2;
+  text-shadow: 2px 2px 5px #7f5a36;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  border-radius: 12px;
+  border: 2px solid #074b21;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  background-color: #3b2f2f;
+  color: #f0e6d2;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #73a4b3;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #5c4033;
+  border-color: #73a4b3;
+  box-shadow: 0 0 15px #73a4b3;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto #bd150f;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #3b2f2f;
+    background-color: #f5f0e6;
   }
   a:hover {
-    color: #747bff;
+    color: #b8860b;
+    text-shadow: 0 0 5px #024e2e;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #000c08;
+    color: #3b2f2f;
+    border-color: #7f5a36;
+    box-shadow: 0 0 8px #7f5a36;
   }
 }

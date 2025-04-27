@@ -26,7 +26,7 @@ function Lista() {
   // Filtro por casa
   if (tipoSeleccionado !== "All") {
     resultados = resultados.filter(personaje =>
-      (personaje.house || "unknown") === tipoSeleccionado
+      (personaje.house || "Desconocido") === tipoSeleccionado
     );
   }
 
@@ -45,7 +45,7 @@ function Lista() {
       <section className='c-lista'>
         {resultados.map((personaje, index) => (
           <div
-            className={`c-lista-pokemon hp-house-${personaje.house || 'unknown'}`}
+            className={`c-lista-pokemon hp-house-${personaje.house || 'Desconocido'}`}
             onClick={() => navigate(`/detalle/${encodeURIComponent(personaje.name)}`)}
             key={index}
           >

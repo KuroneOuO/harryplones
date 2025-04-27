@@ -5,7 +5,7 @@ function Filtro({ onCasaChange }) {
     "Slytherin",
     "Ravenclaw",
     "Hufflepuff",
-    "unknown"
+    "Desconocido"
   ];
 
   return (
