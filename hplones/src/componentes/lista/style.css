@@ -1,0 +1,108 @@
+.c-lista {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.c-lista-pokemon {
+    background-color: #f4f4f4;
+    width: calc(50% - 10px);
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.c-lista-pokemon:hover {
+    transform: scale(1.03);
+}
+
+.c-lista-pokemon img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-height: 80px;
+    margin-bottom: 5px;
+}
+
+/* Colores por casa */
+.hp-house-Gryffindor {
+    background-color: #7f0909; /* rojo oscuro */
+    color: white;
+}
+
+.hp-house-Slytherin {
+    background-color: #0d6217; /* verde oscuro */
+    color: white;
+}
+
+.hp-house-Ravenclaw {
+    background-color: #222f5b; /* azul oscuro */
+    color: white;
+}
+
+.hp-house-Hufflepuff {
+    background-color: #ffdb00; /* amarillo */
+    color: #000;
+}
+
+.hp-house-Desconocido {
+    background-color: #8a0a3f;
+    color: #000;
+}
+
+.c-buscador {
+    font-family: 'Cinzel Decorative', cursive;
+    background-color: #f5deb3;
+    border: 3px solid #8b4513;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #4b2e83;
+    width: 70%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .c-buscador::placeholder {
+    color: #4b2e83;
+    font-style: italic;
+  }
+  
+  .c-buscador:focus {
+    outline: none;
+    background-color: #fff8dc;
+    border-color: #4b2e83;
+    box-shadow: 0 0 10px rgba(75, 46, 131, 0.8), 0 0 20px rgba(218, 165, 32, 0.8);
+  }
+  
+  .c-buscador:hover {
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.8), 0 0 25px rgba(75, 46, 131, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+  }
+  
+  /* Efecto mágico adicional: Partículas brillantes */
+  .c-buscador::before,
+  .c-buscador::after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 223, 94, 0.3) 10%, transparent 70%);
+    filter: blur(5px);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .c-buscador:hover::before,
+  .c-buscador:hover::after {
+    opacity: 1;
+  }
+  

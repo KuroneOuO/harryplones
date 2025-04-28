@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;700&display=swap');
+
+.c-menu {
+  background: #2a5c28;
+  border-bottom: 4px solid #887520;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  font-family: 'Cinzel Decorative', cursive; /* más Harry Potter */
+  font-size: 1.3rem;
+}
+
+.c-menu a {
+  color: #f0e6d2;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+}
+
+.c-menu a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #d4af37;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.c-menu a:hover {
+  background-color: #085024;
+  color: #d4af37;
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+.c-menu a:hover::after {
+  width: 100%;
+}
+

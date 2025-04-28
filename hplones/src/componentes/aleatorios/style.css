@@ -1,0 +1,52 @@
+.c-aleatorio {
+    background: linear-gradient(#001f00, #003300);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  
+  .c-un_aleatorio {
+    background-color: #f7f3e9;
+    color: #2e1a09; /* Color de texto */
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .c-un_aleatorio:hover {
+    transform: scale(1.05);
+    background-color: #ffe8a3;
+  }
+  
+  .c-un_aleatorio .nombre {
+    font-size: 1.5rem;
+    color: #2e1a09; /* Título oscuro */
+  }
+  
+  .c-un_aleatorio .casa {
+    font-size: 1.2rem;
+    color: #5a381e; /* Un marrón más clarito */
+  }
+  
+  .btn-generar {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.2rem;
+    color: #f0e6d2;
+    background-color: #022e02;
+    border: 2px solid #d4af37;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-generar:hover {
+    background-color: #085024;
+    transform: scale(1.05);
+  }
+  

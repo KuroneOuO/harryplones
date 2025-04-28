@@ -8,7 +8,9 @@ function Aleatorios() {
 
   const navigate = useNavigate();
 
-  setTipoSeleccionado("All");
+  useEffect(() => {
+    setTipoSeleccionado("All");
+  }, [setTipoSeleccionado]);
 
   useEffect(() => {
     if (data.length > 0) {
@@ -27,18 +29,19 @@ function Aleatorios() {
 
     const nuevosIds = nuevosAleatorios.map((personaje) => personaje.name)
       .filter(name => !listaCapturados.includes(name));
-      
+
     setListaCapturados(prev => [...prev, ...nuevosIds]);
   };
 
   return (
     <section className="c-aleatorio c-lista">
       {aleatorio.map((personaje, index) => (
-        <div className="c-lista-pokemon c-un_aleatorio"
+        <div
+          className="c-lista-pokemon c-un_aleatorio"
           key={index}
           onClick={() => navigate(`/detalle/${encodeURIComponent(personaje.name)}`)}
         >
-          <p>{personaje.name}</p>
+          <p className="nombre">{personaje.name}</p>
           {personaje.image && (
             <img
               src={personaje.image}
@@ -47,10 +50,10 @@ function Aleatorios() {
               height="60"
             />
           )}
-          <p>{personaje.house || "Sin casa"}</p>
+          <p className="casa">{personaje.house || "Sin casa"}</p>
         </div>
       ))}
-      <button onClick={generar}>Generar</button>
+      <button className="btn-generar" onClick={generar}>Generar</button>
     </section>
   );
 }

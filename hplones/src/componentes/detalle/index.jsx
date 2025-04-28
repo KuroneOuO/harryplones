@@ -1,9 +1,9 @@
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect, useContext } from 'react';
 import { useParams } from "react-router-dom"; 
 import { AppContext } from '../../contexto/contexto';
+import './style.css'; // Asegúrate de que la ruta sea correcta
 
 function Detalle() {
-
   const { name } = useParams(); 
   const [personaje, setPersonaje] = useState(null);
   const { favoritos, setFavoritos } = useContext(AppContext);
