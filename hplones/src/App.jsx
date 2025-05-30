@@ -8,6 +8,7 @@ import Lista from './componentes/lista';
 import Capturados from './componentes/capturados';
 import Favoritos from './componentes/favoritos';
 import Detalle from './componentes/detalle';
+import Parejas from './componentes/parejas/Parejas';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/capturados" element={<Capturados />} />
         <Route path="/favoritos" element={<Favoritos />} />
         <Route path="/detalle/:name" element={<Detalle />} />
+        <Route path="/parejas" element={<Parejas />} />
       </Routes>
 
     </Router>

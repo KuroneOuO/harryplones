@@ -8,6 +8,7 @@ function Menu() {
       <Link to="/capturados" className="c-menu-link">Todos los nombres</Link>
       <Link to="/aleatorios" className="c-menu-link">Aleatorio</Link>
       <Link to="/favoritos" className="c-menu-link">Favoritos</Link>
+      <Link to="/parejas" className="c-menu-link">Parejas</Link>
     </nav>
   );
 }
